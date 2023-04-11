@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import UserLanding from './Landing/components/UserLanding';
+import DisplayMovies from './Landing/components/DisplayMovies';
+import { legacy_createStore as createStore } from 'redux';
+import reducer from './Landing/reducers';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const appStore = createStore(reducer)
 root.render(
   <React.StrictMode>
-    <UserLanding />
+    <Provider store={appStore}>
+      <DisplayMovies />
+    </Provider>
   </React.StrictMode>
 );
 

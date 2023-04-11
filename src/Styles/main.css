@@ -1,0 +1,54 @@
+.small-button {
+    line-height : 2px;
+    border-radius: 10%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.modal-layout  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .small-font {
+    font-size: 16px;
+  }
+
+  .tiny-font {
+    font-size: 50%;
+  }
+  .small-badge-font {
+    font-size : 60%;
+  }
+  .tags {
+    color: #ff0000;
+    font-style: italic;
+    font-size: 50%;
+  }
+
+  .card-padding {
+    padding-top: 15px;
+    padding-bottom : 15px;
+  }
+  
