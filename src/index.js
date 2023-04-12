@@ -5,15 +5,16 @@ import DisplayMovies from './Landing/components/DisplayMovies';
 import { legacy_createStore as createStore } from 'redux';
 import reducer from './Landing/reducers';
 import { Provider } from 'react-redux';
+import UserLanding from './Landing/components/Landing';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const appStore = createStore(reducer)
 root.render(
-  <React.StrictMode>
+  <>
     <Provider store={appStore}>
-      <DisplayMovies />
+      <UserLanding />
     </Provider>
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
